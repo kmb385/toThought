@@ -17,14 +17,13 @@
 		<property name="url" value="jdbc:mysql://localhost:3306/to_thought" />
 		<property name="username" value="${db.user}" />
 		<property name="password" value="${db.password}" />
-	</bean> 
+	</bean>--> 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_APP_NAME}" />
+		<property name="url" value="jdbc:mysql://127.6.153.130:3306/blog" />
 		<property name="username" value="adminzXYc8GG" />
 		<property name="password" value="Y7fFDEm5dd87" />	
-	</bean>-->
-	<jee:jndi-lookup id="dataSource" jndi-name="jboss/datasources/MysqlDS" expected-type="javax.sql.DataSource" />
+	</bean>
 	<bean id="entityManagerFactory"
 		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="dataSource" />
