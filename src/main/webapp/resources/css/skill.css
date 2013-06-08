@@ -1,0 +1,28 @@
+.commit, .commit:VISITED{
+	text-decoration: none;
+	color: #10486E;
+}
+
+.commit:HOVER{
+	text-decoration: underline;
+}
+
+.delete-image-link{
+	position: relative;
+}
+
+.delete-image-link div{
+	float: left;
+}
+
+.skill-page-title{
+	margin: 3px 10px;
+}
+
+.more{
+	text-decoration: none;
+}
+
+.more:HOVER{
+	text-decoration: underline;
+}

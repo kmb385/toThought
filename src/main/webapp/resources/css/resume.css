@@ -1,0 +1,91 @@
+/** Side-Bar Buttons **/
+.profile-btn{
+	background: url(../../resources/images/resume/user2.png) no-repeat;
+}
+
+.skills-btn{
+	background: url(../../resources/images/resume/tech-skills32.png) no-repeat;
+}
+
+.education-btn{
+	background: url(../../resources/images/resume/education32.png) no-repeat;
+	position: relative;
+	top: 2px;	
+}
+
+.work-btn{
+	background: url(../../resources/images/resume/work32.png) no-repeat;	
+}
+
+.manager-btn{
+	background: url(../../resources/images/resume/manager.png) no-repeat;
+	position: relative;
+	top: 2px;
+}
+
+/** Profile Section **/
+.label{
+	color: #666666;
+	margin-right: 6px;
+	text-align: right;
+}
+
+.left-cell-50{
+	float: left;
+	width: 50px;
+}
+
+.right-cell{
+	float: left;
+}
+
+.list li{
+	list-style: circle;
+	margin-left: 20px;
+}
+
+.floated-list{
+	float: left;
+	margin-right: 20px;
+}
+
+/** End Profile Section **/
+
+/** Technical Expertise Section **/
+.resume-block{
+	border: 1px solid transparent;
+	
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+	
+	/** To Support Links **/
+	position: relative;	
+	width: 520px;	
+}
+
+.resume-block:hover{
+	border: 1px solid lightgray;
+	cursor: pointer;	
+}
+
+.resume-block div{
+	float: left;
+	font-size: 2em;
+	margin: 3px 10px;
+}
+
+.resume-block .name{
+	width: 250px;
+}
+
+.resume-block .img{
+	height: 32px;
+	width: 32px;
+	margin: 0px 10px;
+}
+
+.resume-block .img img{
+	vertical-align: middle;
+}

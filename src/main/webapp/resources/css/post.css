@@ -1,0 +1,50 @@
+.post-body{
+	margin: 1.25em 0;
+	text-align: justify;	
+}
+
+.post-body a, .post-body a:VISITED{
+	text-decoration: none;
+	color: #10486E;
+}
+
+.post-body a:HOVER{
+	text-decoration: underline;
+}
+
+.post-body strong{
+	font-weight: bold;
+}
+
+.post-editor{
+	height: 400px;
+	width: 600px;
+}
+
+.post-title{
+	color: inherit;
+	text-decoration: none;
+	width: 600px;	
+}
+
+.post:first-child{
+	margin-top: 0px;
+}
+
+.dzone-button{
+	height: 22px;
+	margin: 0px 20px;
+	overflow: hidden;
+	width: 153px;
+}
+
+.youtube{
+	margin: 0px auto;
+	width: 560px;
+}
+
+#comment-form{
+	border: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	padding: 5px 20px;
+}
