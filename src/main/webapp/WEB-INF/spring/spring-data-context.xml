@@ -8,22 +8,20 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
 	<context:property-placeholder location="classpath:META-INF/db/db.properties" order="3" ignore-unresolvable="true"/>
-	
+<!--  	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/to_thought" />
 		<property name="username" value="${db.user}" />
 		<property name="password" value="${db.password}" />
-	</bean>
-	<!-- 
+	</bean> -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/blog" />
-		<property name="username" value="adminQVIIfwh" />
-		<property name="password" value="s1k2IVr9GgBy" />	
+		<property name="username" value="adminzXYc8GG" />
+		<property name="password" value="Y7fFDEm5dd87" />	
 	</bean>
-	 -->
 	<bean id="entityManagerFactory"
 		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="dataSource" />
