@@ -18,7 +18,7 @@
 	</bean> -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/blog" />
+		<property name="url" value="jdbc:mysql://${env.OPENSHIFT_MYSQL_DB_HOST}:${env.OPENSHIFT_MYSQL_DB_PORT}  /${env.OPENSHIFT_APP_NAME}" />
 		<property name="username" value="adminzXYc8GG" />
 		<property name="password" value="Y7fFDEm5dd87" />	
 	</bean>
