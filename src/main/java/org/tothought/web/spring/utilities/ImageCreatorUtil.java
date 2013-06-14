@@ -29,7 +29,8 @@ public class ImageCreatorUtil{
 	 */
 	public void storeImage(Image image) {
 		if (image != null) {
-			String realPath = ((WebApplicationContext)context).getServletContext().getRealPath("/");
+			//String realPath = ((WebApplicationContext)context).getServletContext().getRealPath("/");
+			String realPath = ((WebApplicationContext)context).getServletContext().getContextPath();
 			File tmpFile = new File(realPath + IMAGE_PATH_FRAGMENT + image.getName());
 
 			try {
