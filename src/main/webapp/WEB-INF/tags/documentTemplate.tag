@@ -15,6 +15,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>ToThought ${title}</title>
+<meta name="google-site-verification" content="TWl2IyBn5Tg6pSDse_sG_TFQ6NoAl-HFkzqPAe2e0XE" />
 <!-- Load Base CSS -->
 <jsp:include page="/WEB-INF/views/fragments/base_css.jsp" />
 <!-- Load Specified CSS -->
