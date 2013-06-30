@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="COMMENT")
 public class Comment {
-
+//change
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="COMMENT_ID")
