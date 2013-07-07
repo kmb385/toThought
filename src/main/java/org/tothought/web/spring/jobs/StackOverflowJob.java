@@ -53,6 +53,7 @@ public class StackOverflowJob extends AbstractDataLoadJob {
 		this.setTags(answers);
 
 		answerRepository.save(answers);
+		logger.info("Attempting to persist answers.");
 
 		super.logJobAndNotify(JOB_NAME, answers.size(), this.getMostRecentDate(answers));
 	}
