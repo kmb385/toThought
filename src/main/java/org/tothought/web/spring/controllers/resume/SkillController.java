@@ -2,6 +2,7 @@ package org.tothought.web.spring.controllers.resume;
 
 import java.util.List;
 
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
@@ -24,6 +25,7 @@ import org.tothought.web.spring.annotations.PageableRequestMapping;
 @RequestMapping("/resume/skills")
 public class SkillController {
 
+	private Logger logger = LoggerFactory.getLogger(SkillController.class);
 	private Sort commitSort = new Sort(Direction.DESC, "commitDt");
 	private Sort answerSort = new Sort(Direction.DESC, "createdDt");
 	private int pageSize = 5;
@@ -59,7 +61,7 @@ public class SkillController {
 		this.handleSkillRequest(model, skillId, detail, null);
 		return "resume/skill";
 	}
-	
+
 	/**
 	 * Returns JSON of all details for ajax request.
 	 * 
@@ -69,11 +71,11 @@ public class SkillController {
 	 * @return
 	 */
 	@ResponseBody
-	@RequestMapping(value="/{skillId}/detail/{detail}", produces="application/json")
+	@RequestMapping(value = "/{skillId}/detail/{detail}", produces = "application/json")
 	public String getSkillJson(Model model, @PathVariable Integer skillId, @PathVariable String detail) {
 		return this.getDetailJson(skillId, detail, null);
 	}
-	
+
 	/**
 	 * Returns JSON of a page of details for ajax request.
 	 * 
@@ -82,9 +84,10 @@ public class SkillController {
 	 * @param detail
 	 * @return
 	 */
-	@RequestMapping(value="/{skillId}/detail/{detail}/detailpage/{detailpage}", produces="application/json")
+	@RequestMapping(value = "/{skillId}/detail/{detail}/detailpage/{detailpage}", produces = "application/json")
 	@ResponseBody
-	public String getSkillJson(@PathVariable Integer skillId, @PathVariable String detail, @PathVariable Integer detailpage) {
+	public String getSkillJson(@PathVariable Integer skillId, @PathVariable String detail,
+			@PathVariable Integer detailpage) {
 		return this.getDetailJson(skillId, detail, detailpage);
 	}
 
@@ -107,31 +110,38 @@ public class SkillController {
 
 	/**
 	 * Return the appropriate list of skills.
+	 * 
 	 * @param model
 	 * @param skillId
 	 * @param detailType
 	 * @param page
 	 */
 	private void handleSkillRequest(Model model, Integer skillId, String detailType, Integer page) {
-		List<? extends SkillDetail> details = null;
-		Skill skill = skillRepository.findOne(skillId);
-		String tagName = (skill.getTag() != null) ? skill.getTag().getName() : null;
+		try {
+			List<? extends SkillDetail> details = null;
+			Skill skill = skillRepository.findOne(skillId);
+			String tagName = (skill.getTag() != null) ? skill.getTag().getName() : null;
 
-		details = findDetails(detailType, page, tagName);
+			details = findDetails(detailType, page, tagName);
 
-		model.addAttribute("skill", skill);
-		model.addAttribute("detailType", detailType);
-		model.addAttribute("details", details);
+			model.addAttribute("skill", skill);
+			model.addAttribute("detailType", detailType);
+			model.addAttribute("details", details);
+
+		} catch (Exception e) {
+			logger.debug(e.printStackTrace());
+		}
 	}
 
 	/**
 	 * Returns a list of Details based upon request parameters.
+	 * 
 	 * @param detailType
 	 * @param page
 	 * @param tagName
 	 * @return
 	 */
-	private List<? extends SkillDetail> findDetails(String detailType, Integer page,String tagName) {
+	private List<? extends SkillDetail> findDetails(String detailType, Integer page, String tagName) {
 		List<? extends SkillDetail> details = null;
 		if (page == null) {
 			if (detailType.equalsIgnoreCase("github")) {
@@ -150,19 +160,20 @@ public class SkillController {
 		}
 		return details;
 	}
-	
+
 	/**
 	 * Returns Json for based upon parameters specified by request.
+	 * 
 	 * @param skillId
 	 * @param detail
 	 * @param detailPage
 	 * @return
 	 */
-	private String getDetailJson(Integer skillId, String detail, Integer detailPage){
+	private String getDetailJson(Integer skillId, String detail, Integer detailPage) {
 		List<? extends SkillDetail> details = null;
 		Skill skill = skillRepository.findOne(skillId);
 		String tagName = (skill.getTag() != null) ? skill.getTag().getName() : null;
-		
+
 		details = this.findDetails(detail, detailPage, tagName);
 		return JsonUtil.getJson(details);
 	}
