@@ -46,14 +46,12 @@ public class StackOverflowJob extends AbstractDataLoadJob {
 
 		Date dataCurrentDate = this.getDataCurrentDate();
 		
-		logger.info("Data current date for Stack Overflow job  is " + dataCurrentDate.toString());
 		super.logRetreivalDate(JOB_NAME, dataCurrentDate);
 
 		List<StackOverflowAnswer> answers = stackOverflowService.findAllAnswers(dataCurrentDate, new Date());
 		this.setTags(answers);
 
 		answerRepository.save(answers);
-		logger.info("Attempting to persist answers.");
 
 		super.logJobAndNotify(JOB_NAME, answers.size(), this.getMostRecentDate(answers));
 	}
