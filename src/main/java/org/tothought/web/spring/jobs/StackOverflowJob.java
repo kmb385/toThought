@@ -45,6 +45,8 @@ public class StackOverflowJob extends AbstractDataLoadJob {
 		StackOverflowService stackOverflowService = new StackOverflowService();
 
 		Date dataCurrentDate = this.getDataCurrentDate();
+		
+		logger.info("Data current date for Stack Overflow job  is " + dataCurrentDate.toString());
 		super.logRetreivalDate(JOB_NAME, dataCurrentDate);
 
 		List<StackOverflowAnswer> answers = stackOverflowService.findAllAnswers(dataCurrentDate, new Date());
