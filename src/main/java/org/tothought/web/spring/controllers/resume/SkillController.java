@@ -2,6 +2,7 @@ package org.tothought.web.spring.controllers.resume;
 
 import java.util.List;
 
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -129,7 +130,7 @@ public class SkillController {
 			model.addAttribute("details", details);
 
 		} catch (Exception e) {
-			logger.debug(e.printStackTrace());
+			e.printStackTrace();
 		}
 	}
 
