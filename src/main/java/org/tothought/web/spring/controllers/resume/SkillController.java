@@ -130,6 +130,7 @@ public class SkillController {
 			model.addAttribute("details", details);
 
 		} catch (Exception e) {
+			logger.error("Error", e);
 			e.printStackTrace();
 		}
 	}
