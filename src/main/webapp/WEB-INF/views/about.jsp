@@ -15,16 +15,14 @@
 	<p class="v-margin-text-block">
 		toThought also serves as a test bed for new ideas and the exploration
 		of new technologies. The code behind toThought is available for review
-		via GitHub in two repositories, <a
-			href="https://github.com/kmb385/ToThoughtDataLayer" target="_blank">ToThoughtDataLayer</a>
-		and <a href="https://github.com/kmb385/ToThoughtWebLayer"
-			target="_blank">ToThoughtWebLayer</a>. I invite you to fork the code
-		for review or development. Any feedback provided is greatly
-		appreciated.
+		via GitHub in this <a
+			href="https://github.com/kmb385/toThought" target="_blank">repository</a>.
+		I invite you to fork the code for review or development. Any feedback
+		provided is greatly appreciated.
 	</p>
 
-	<p class="v-margin-text-block">Another activity I enjoy is solving coding issues
-		on StackOverflow. Checkout my profile.</p>
+	<p class="v-margin-text-block">Another activity I enjoy is solving
+		coding issues on StackOverflow. Checkout my profile.</p>
 	<a href="http://stackoverflow.com/users/714969/kevin-bowersox"> <img
 		src="http://stackoverflow.com/users/flair/714969.png" width="208"
 		height="58"
