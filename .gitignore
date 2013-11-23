@@ -1,7 +1,7 @@
-src/main/resources/META-INF/security/
-src/main/resources/META-INF/jobs/
-src/main/resources/META-INF/email/
-src/main/resources/META-INF/db/
+#src/main/resources/META-INF/security/
+#src/main/resources/META-INF/jobs/
+#src/main/resources/META-INF/email/
+#src/main/resources/META-INF/db/
 .openshift/
 build/
 target/*
