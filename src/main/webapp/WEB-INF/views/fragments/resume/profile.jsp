@@ -20,7 +20,7 @@
 				<div class="clearfix">
 					<div class="left-cell-50 label">Site</div>
 					<div class="right-cell">
-						<a href="http://tothought.cloudfoundry.com">tothought.cloudfoundry.com</a>
+						<a href="http://blog-tothought.rhcloud.com">tothought.cloudfoundry.com</a>
 					</div>
 				</div>
 			</div>
