@@ -1,0 +1,81 @@
+.frame{
+	background: yellow;
+}
+
+html,body{
+	background-color: #F7F7F7;
+	overflow:auto;
+}
+
+#container{
+    box-shadow: 0.0em 0.4em 1em -0.2em #333;
+	border-bottom: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+	margin: 0px auto;
+	overflow: hidden;
+	width: 980px;
+}
+
+#inner-container{
+	float: left;
+	position: relative;
+	right: 650px;
+}
+
+#header{
+	box-shadow: 0.3em 0.4em .5em -0.2em #333;
+	height: 85px;
+	position: relative;
+	z-index:100;
+}
+
+#nav-menu{
+	position: absolute;
+	bottom: 5px;
+	width:100%;
+}
+
+#logo{
+	background: url('../images/logo-small.png') no-repeat;
+	height: 75px;
+	left: 10px;
+	position: relative;
+	top: 5px;
+	width: 190px;
+}
+
+#center-panel{
+	border-right: 1px solid lightgray;
+	float:left;
+	min-height: 500px;
+	padding: 30px 40px;
+	position: relative;
+	left: 650px;
+	width: 610px;
+}
+
+#side-bar{
+	float: left;
+	padding: 5px;
+	position: relative;
+	left: 650px;
+	width: 278px;
+}
+
+.page-title{
+  font-size: 1.5em;
+  font-weight: bold;	
+  margin-bottom: 20px;
+}
+
+.section-title{
+	font-size: 1.35em;
+	font-weight: bold;
+	margin-top: .75em;
+	margin-bottom: .5em;
+}
+
+.spacer{
+	height:25px;
+}

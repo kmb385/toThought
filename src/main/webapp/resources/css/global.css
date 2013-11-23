@@ -1,0 +1,112 @@
+.bold {
+	font-weight: bold;
+}
+
+input {
+	border: 1px solid #999999;
+}
+
+textarea{
+	resize: none;
+}
+
+.margin-center{
+	margin: 0px auto;
+}
+
+.v-margin-4 {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.v-margin-5{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.v-margin-10 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.v-margin-20 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.v-bottom-margin-20{
+	margin-bottom: 20px;
+}
+
+.v-margin-text-block{
+	margin-top: .75em;
+	margin-bottom: .75em;
+}
+
+.h-margin-3{
+	margin-left: 3px;
+	margin-right: 3px;	
+}
+
+.h-margin-20 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.r-margin-20{
+	margin-right: 20px;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.pad-5 {
+	padding: 5px;
+}
+
+.shadow {
+	box-shadow: 0.3em 0.4em .5em -0.2em #333;
+}
+
+.text-right{
+	text-align:right;
+}
+
+.div-link{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.no-decoration-anchor{
+	color:inherit;
+	text-decoration: none;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
