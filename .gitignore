@@ -8,5 +8,5 @@ build/
 target/
 .classpath/
 .project/
-.gitignore/
+.gitignore/*
 *.md
