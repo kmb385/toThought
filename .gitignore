@@ -6,7 +6,8 @@ src/main/resources/META-INF/db/
 build/
 .settings/
 target/
+/target/
 .classpath/
 .project/
-.gitignore/
+.gitignore/*
 *.md
