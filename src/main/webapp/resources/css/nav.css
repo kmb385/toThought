@@ -1,20 +1,17 @@
 #nav-menu ul{
 	list-style-type:none;
-	margin: 0px auto;
-	width: 466px;
+	padding: 3px 0px;
 }
 
 #nav-menu ul li{
-	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    border-radius: 5px;
-
 	display:inline-block;
-	font-size: 2em;
+	font-size: 1.35em;
 	font-weight: bold;
-	margin: 0px 10px;
-	padding: 2px 3px;
+}
+
+#nav-menu ul li a{
+	border-right: 2px solid #175C6E;
+	padding: 0px 10px;
 }
 
 #nav-menu ul li#login{
@@ -22,8 +19,7 @@
 }
 
 #nav-menu ul li:hover{
-	background-color: #E3EBEF;
-	color: #10486E;
+	background-image: -moz-linear-gradient(bottom, #044669 0%, #0C344F 100%);
 }
 
 #nav-menu ul li a{

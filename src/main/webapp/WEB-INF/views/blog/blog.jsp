@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="ttTags" uri="/WEB-INF/tags/tothought-tags.tld"%>
-<!-- Page -->
+
 <ttTags:documentTemplate sidebarFragment="blog_sidebar.jsp"
 	cssFiles="post.css,post_tags.css"
 	jsFiles="${pageContext.request.contextPath}/resources/js/pages/post.js"
