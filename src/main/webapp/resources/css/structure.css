@@ -1,14 +1,14 @@
-.frame{
+.frame {
 	background: yellow;
 }
 
-html,body{
+html,body {
 	background-color: #F7F7F7;
-	overflow:auto;
+	overflow: auto;
 }
 
-#container{
-    box-shadow: 0.0em 0.4em 1em -0.2em #333;
+#container {
+	box-shadow: 0.0em 0.4em 1em -0.2em #333;
 	border-bottom: 1px solid lightgray;
 	border-left: 1px solid lightgray;
 	border-right: 1px solid lightgray;
@@ -17,38 +17,29 @@ html,body{
 	width: 980px;
 }
 
-#inner-container{
+#inner-container {
 	float: left;
 	position: relative;
 	right: 650px;
 }
 
-#header{
+#header {
 	box-shadow: 0.3em 0.4em .5em -0.2em #333;
 	position: relative;
-	z-index:100;
+	z-index: 100;
 }
 
-#nav-menu{
-	/*background-image: -moz-linear-gradient(center bottom , #044D75 0%, #0E3E5E 100%);*/
+#nav-menu {
+	background-image: -o-linear-gradient(bottom, #044D75 0%, #0E3E5E 100%);
+	background-image: -moz-linear-gradient(center bottom, #044D75 0%, #0E3E5E 100%);
+	background-image: -webkit-linear-gradient(bottom, #044D75 0%, #0E3E5E 100%);
+	background-image: -ms-linear-gradient(bottom, #044D75 0%, #0E3E5E 100%);
+	background-image: linear-gradient(to bottom, #0E3E5E 0%, #044D75 100%);
 	margin-top: 10px;
-	width:100%;
-	
-/*	background-image: -webkit-gradient(
-	linear,
-	left top,
-	left bottom,
-	color-stop(0, #0E3E5E),
-	color-stop(1, #044D75)
-);*/
-background-image: -o-linear-gradient(bottom, #044D75 0%, #0E3E5E 100%);
-background-image: -moz-linear-gradient(center bottom, #044D75 0%, #0E3E5E 100%);
-background-image: -webkit-linear-gradient(bottom, #044D75 0%, #0E3E5E 100%);
-background-image: -ms-linear-gradient(bottom, #044D75 0%, #0E3E5E 100%);
-background-image: linear-gradient(to bottom, #0E3E5E 0%, #044D75 100%);
+	width: 100%;
 }
 
-#logo{
+#logo {
 	background: url('../images/logo-small.png') no-repeat;
 	height: 75px;
 	left: 10px;
@@ -57,9 +48,9 @@ background-image: linear-gradient(to bottom, #0E3E5E 0%, #044D75 100%);
 	width: 190px;
 }
 
-#center-panel{
+#center-panel {
 	border-right: 1px solid lightgray;
-	float:left;
+	float: left;
 	min-height: 500px;
 	padding: 30px 40px;
 	position: relative;
@@ -67,7 +58,7 @@ background-image: linear-gradient(to bottom, #0E3E5E 0%, #044D75 100%);
 	width: 610px;
 }
 
-#side-bar{
+#side-bar {
 	float: left;
 	padding: 5px;
 	position: relative;
@@ -75,19 +66,19 @@ background-image: linear-gradient(to bottom, #0E3E5E 0%, #044D75 100%);
 	width: 278px;
 }
 
-.page-title{
-  font-size: 1.5em;
-  font-weight: bold;	
-  margin-bottom: 20px;
+.page-title {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 20px;
 }
 
-.section-title{
+.section-title {
 	font-size: 1.35em;
 	font-weight: bold;
 	margin-top: .75em;
 	margin-bottom: .5em;
 }
 
-.spacer{
-	height:25px;
+.spacer {
+	height: 25px;
 }
