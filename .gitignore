@@ -2,7 +2,7 @@
 #src/main/resources/META-INF/jobs/
 #src/main/resources/META-INF/email/
 #src/main/resources/META-INF/db/
-.openshift/
+#.openshift/
 build/
 target/*
 webapps/
