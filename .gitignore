@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+=======
+src/main/resources/META-INF/security/
+src/main/resources/META-INF/jobs/
+src/main/resources/META-INF/email/
+src/main/resources/META-INF/db/
+.openshift/
+build/
+.settings/
+target/
+/target/
+.classpath
+.project/
+.gitignore/*
+*.md
+.gitignore
+>>>>>>> master
