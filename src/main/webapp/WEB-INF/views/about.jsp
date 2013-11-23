@@ -17,7 +17,7 @@
 		of new technologies. The code behind toThought is available for review
 		via GitHub in this <a
 			href="https://github.com/kmb385/toThought" target="_blank">repository</a>.
-		I invite you to fork the code for review or development. Any feedback
+		I invite you to fork this repository for review or development. Any feedback
 		provided is greatly appreciated.
 	</p>
 
