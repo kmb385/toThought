@@ -1,6 +1,6 @@
 package org.tothought.web.email.abstracts;
 
-//Comment
+//Comment2
 public class AbstractMailMessage {
 
 	
