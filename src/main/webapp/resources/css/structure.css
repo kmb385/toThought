@@ -29,6 +29,16 @@ html,body {
 	z-index: 100;
 }
 
+#top-banner{
+	position: relative;	
+}
+
+#social-icons{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
 #nav-menu {
 	background-image: -o-linear-gradient(bottom, #044D75 0%, #0E3E5E 100%);
 	background-image: -moz-linear-gradient(center bottom, #044D75 0%, #0E3E5E 100%);
