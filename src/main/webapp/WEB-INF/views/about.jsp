@@ -21,7 +21,7 @@
 		provided is greatly appreciated.
 	</p>
 
-	<p class="v-margin-text-block">Another activity I enjoy is solving
+	<p class="v-margin-text-block">I also enjoy solving
 		coding issues on StackOverflow. Checkout my profile.</p>
 	<a href="http://stackoverflow.com/users/714969/kevin-bowersox"> <img
 		src="http://stackoverflow.com/users/flair/714969.png" width="208"
