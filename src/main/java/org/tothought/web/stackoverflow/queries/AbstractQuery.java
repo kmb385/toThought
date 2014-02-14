@@ -7,10 +7,12 @@ import java.util.Map;
 public abstract class AbstractQuery{
 
 	protected static final String STACK_API_BASE_DOMAIN = "http://api.stackexchange.com";
+	
+	protected static final String VERSION = "/2.2";
 
 	protected static final String USERS = "/users/";
 
-	protected static final String BASE_QUERY = STACK_API_BASE_DOMAIN + USERS;
+	protected static final String BASE_QUERY = STACK_API_BASE_DOMAIN + VERSION + USERS;
 
 	protected static final String TO_DATE_PARAMETER = "todate";
 	
