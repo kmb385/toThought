@@ -10,12 +10,10 @@
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.format_sql" value="true"/>				
-<<<<<<< HEAD
-  			<property name="hibernate.hbm2ddl.auto" value="validate"/>		
-=======
+
 			<property name="hibernate.hbm2ddl.auto" value="validate"/>		
->>>>>>> 5b43832aeb38e3c9713c1386308659d1f6e85550
-<!--		<property name="hibernate.hbm2ddl.auto" value="update"/> -->		
+<!--		<property name="hibernate.hbm2ddl.auto" value="update"/> -->	
+	
 		</properties>
 	</persistence-unit>
 	<persistence-unit name="toThoughtTest" transaction-type="RESOURCE_LOCAL">
