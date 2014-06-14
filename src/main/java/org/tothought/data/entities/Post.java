@@ -51,7 +51,6 @@ public class Post{
 
 
 	@OneToMany(fetch=FetchType.LAZY, mappedBy="post")
-	@JoinColumn(name="POST_ID")
 	@OrderBy("postedDt DESC")
 	private List<Comment> comments = new ArrayList<Comment>();
 	
