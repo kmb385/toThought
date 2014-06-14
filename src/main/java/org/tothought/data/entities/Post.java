@@ -49,8 +49,7 @@ public class Post{
 	inverseJoinColumns={@JoinColumn(name="TAG_ID", referencedColumnName="TAG_ID")})
 	private List<Tag> tags = new ArrayList<Tag>();
 
-	@OneToMany(fetch=FetchType.LAZY,cascade=CascadeType.ALL)
-	@JoinColumn(name="POST_ID")
+	@OneToMany(fetch=FetchType.LAZY, mappedBy="post")
 	@OrderBy("postedDt DESC")
 	private List<Comment> comments = new ArrayList<Comment>();
 	

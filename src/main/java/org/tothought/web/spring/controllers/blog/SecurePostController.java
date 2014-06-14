@@ -58,12 +58,16 @@ public class SecurePostController {
 		if(result.hasErrors()){
 			return "blog/managePost";
 		}
+		
+		//Do not overwrite the posted date for existing posts
+		if(post.getPostedDt() == null){
+			post.setPostedDt(new Date());			
+		}
 
 		post.setAuthor("Kevin Bowersox");
-		post.setPostedDt(new Date());
 		post.setTags(tagCreatorUtil.createTags(tags));
 		
-		postRepository.save(post);
+		this.postRepository.save(post);
 		
 		return "redirect:/blog/";
 	}
