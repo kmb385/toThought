@@ -7,6 +7,8 @@ import java.util.Map;
 public abstract class AbstractQuery{
 
 	protected static final String STACK_API_BASE_DOMAIN = "http://api.stackexchange.com";
+	
+	protected static final String VERSION = "/2.2";
 
 	protected static final String VERSION = "/2.2";
 	
