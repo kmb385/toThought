@@ -60,7 +60,7 @@ public class SecurePostController {
 		}
 
 		
-		//Do not overwrite the posted date for existing posts
+		//Do not overwrite posted date for existing posts
 		if(post.getPostedDt() == null){
 			post.setPostedDt(new Date());			
 		}
