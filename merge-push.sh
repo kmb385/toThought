@@ -13,5 +13,5 @@ git rm --cached -r src/main/resources/META-INF/db
 git rm --cached -r src/main/webapp/WEB-INF/spring/spring-data-context.xml
 git clean -df
 git commit -m "Finished Merge"
-git push https://kmb385:***REMOVED***2@github.com/kmb385/toThought.git github_master
+git push https://kmb385:shamrock2@github.com/kmb385/toThought.git github_master
 read -p "Press [Enter] key to start backup..."
