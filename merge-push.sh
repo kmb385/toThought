@@ -3,6 +3,7 @@ cd "c:/Users/Kevin Bowersox/Desktop/Development/Workspaces/STS Workspace 3.4/blo
 git checkout master
 cp -r "c:/Users/Kevin Bowersox/Desktop/Development/Workspaces/STS Workspace 3.4/blog/" "c:/Users/Kevin Bowersox/Desktop/Development/Workspaces/STS Workspace 3.4/Archives/blog/"
 git checkout github_master
+sleep 10
 git merge master --no-commit
 git rm --cached -r .openshift
 git rm --cached -r src/main/resources/META-INF/security
